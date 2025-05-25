@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="css/skeleton.css" />
 
     <style>
-      * {
-        font-family: "Raleway", "Courier New", Courier, monospace;
-      }
       .info {
         text-wrap-mode: nowrap;
       }
@@ -26,6 +23,21 @@
       }
       div .title > h3 {
         margin-bottom: 2rem;
+      }
+      .flag {
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+      }
+      .flag > p {
+        margin: 0;
+        padding: 0 1rem 0 0;
+      }
+      a.button.button-primary {
+        color: unset;
       }
 
       /* Utility Classes */
@@ -67,7 +79,15 @@
           <h3>Engenheiro de Computação</h3>
         </div>
         <div class="one columns">
-          <a class="button" href="index.html">EN</a>
+          <a class="button flag" href="index.html">
+            <p>Change to</p>
+            <img
+              src="./flags/us.svg"
+              alt="Bandeira USA"
+              width="20"
+              height="20"
+            />
+          </a>
         </div>
         <br />
       </div>
@@ -274,6 +294,14 @@
           problemas e no desenvolvimento de aplicações eficientes e escaláveis.
         </li>
       </ul>
+      <hr />
+      <a
+        class="button button-primary"
+        href="./assets/Victor Dallagnol Bento CV BR.pdf"
+        download="Victor Dallagnol Bento CV BR.pdf"
+        target="_blank"
+        >💾 Baixar</a
+      >
     </div>
   </body>
 </html>

@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="css/skeleton.css" />
 
     <style>
-      * {
-        font-family: "Raleway", "Courier New", Courier, monospace;
-      }
       .info {
         text-wrap-mode: nowrap;
       }
@@ -27,7 +24,21 @@
       div .title > h3 {
         margin-bottom: 2rem;
       }
-
+      .flag {
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+      }
+      .flag > p {
+        margin: 0;
+        padding: 0 1rem 0 0;
+      }
+      a.button.button-primary {
+        color: unset;
+      }
       /* Utility Classes */
 
       /* Make element full width */
@@ -67,7 +78,15 @@
           <h3>Computer Engineer</h3>
         </div>
         <div class="one columns">
-          <a class="button" href="index-br.html">🇧🇷</a>
+          <a class="button flag" href="index-br.html">
+            <p>Mudar para</p>
+            <img
+              src="./flags/br.svg"
+              alt="Brazil Flag"
+              width="20"
+              height="20"
+            />
+          </a>
         </div>
         <br />
       </div>
@@ -262,6 +281,14 @@
           scalable applications.
         </li>
       </ul>
+      <hr />
+      <a
+        class="button button-primary"
+        href="./assets/Victor Dallagnol Bento CV EN.pdf"
+        download="Victor Dallagnol Bento CV EN.pdf"
+        target="_blank"
+        >💾 Download</a
+      >
     </div>
   </body>
 </html>
